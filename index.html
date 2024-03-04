@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+    <title>Time is Running Out!</title>
+</head>
+
+<body>
+    <div class="card-container" id="container">
+        <div class="card-container2">
+            <div id="timer-container">
+                <span id="timer">00:00</span>
+            </div>
+        </div>
+
+        <div class="quiztitle" id="quiz-title">
+            <h1 class="header" id="quiz-header">Javascript Quiz</h1>
+            <span id="tease">Can you score enough to beat the leader?</span>
+            <button id="start">Start</button>
+        </div>
+        <div class="question-card" id="question"></div>
+        <div class="options" id="option"></div>
+        <input type="text" id="player-input" maxlength="10">
+        <span id="score"></span>
+        <button id="score-submit" type="submit">Submit score</button>
+        <button id="leader-board" type="submit">Add To Leaderboard</button>
+        <button id="clear-leaderboard">Clear Leaderboard</button>
+        <button id="play-again" type="button">Play Again?</button>
+    </div>
+</body>
+
+<script src="./js/script.js"></script>
+
+</html>
