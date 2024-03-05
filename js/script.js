@@ -82,7 +82,7 @@ const playGame = () => {
             choice.type = 'button';
             choice.className = 'btn';
             choice.textContent = option;
-            choice.setAttribute('data-index', index); // Adding index data attribute to identify the option
+            choice.setAttribute('data-index', index);
             optionElement.appendChild(choice);
         });
     };
@@ -139,7 +139,8 @@ const playGame = () => {
         if (selectedAnswerText === correctAnswerText) {
             score += 10;
         } else {
-            timer.textContent -= 10; // Decrease time by 10 seconds for incorrect answer
+            // Decrease time by 10 seconds for incorrect answer
+            timer.textContent -= 10;
         }
 
         answers.push(selectedAnswerText);
@@ -147,7 +148,7 @@ const playGame = () => {
         console.log("Score:", score);
     };
     ;
-    // Event listeners
+    // Event listeners for start button
     startButton.addEventListener('click', () => {
         quizDiv.style.display = 'none';
         loadQuestion();
@@ -176,7 +177,7 @@ const playGame = () => {
         leaderboardButton.style.display = 'inline-block';
         scoreSpan.style.display = 'none';
         const submissionMessage = document.createElement('span');
-        submissionMessage.textContent = ''; // Initial message content
+        submissionMessage.textContent = '';
         quizDiv.appendChild(submissionMessage);
 
         leaderboardButton.addEventListener('click', () => {
@@ -232,7 +233,7 @@ const playGame = () => {
 });
 
 
-    // Function to reset game state for replay
+    // Function to replay game
     const resetGame = () => {
         location.reload();
     };
