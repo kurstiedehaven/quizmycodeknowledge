@@ -40,6 +40,7 @@ For additional questions, you can reach me through:
 
 - GitHub: [kurstiedehaven](https://github.com/kurstiedehaven)
 - Email: kurstiedehaven@gmail.com
+![Screenshot 2024-03-04 at 11 10 46 PM](https://github.com/kurstiedehaven/quizmycodeknowledge/assets/134163209/753c717e-c1f8-496d-a4ff-e8c39e9e56ca)
 
 ---
 
